@@ -60,16 +60,17 @@ The objective is to predict the customer satisfaction score for the next order g
 <p>The deployment_pipeline.py pipeline extends the training pipeline and creates a continuous deployment workflow. It takes in and processes input data, trains a model, and then (re)deploys the prediction server that serves the model if it meets a paticular criteria.  The pipeline's first four steps are the same as above, including:
 </p>
 <ul>
-  <li>deployment_trigger: To check whether the newly trained model meets the criteria set for deployment. Criteria was set to a minimum of 0.92.</li>
+  <li>deployment_trigger: To check whether the newly trained model meets the criteria set for deployment.</li>
 <li>model_deployer: Deploys the model as a service using MLflow (if deployment criteria is met).</li>
 </ul>
 <p>The MLflow deployment server runs locally as a daemon process that continue to run in the background after the example execution is complete. When a new pipeline runs and creates a model that satisfies the accuracy threshold validation, the pipeline automatically modifies the already running MLflow deployment server to serve the new model rather than the old one.
 </p>
 <h1>Images</h1>
-<img src="https://github.com/Aaron-k12/Customer-Satisfaction-project/assets/107159092/b7d70106-23b6-4d30-b4aa-13f628462f9e">
+<img src="https://github.com/Aaron-k12/customer-satisfaction-project/assets/107159092/0fd18590-487d-4173-b304-cac7456ff03e">
 <p> Zenml dashboard showing DAG visualizer</p>
 <br><br>
-<img src="https://github.com/Aaron-k12/Customer-Satisfaction-project/assets/107159092/4b0403a2-6a60-4f7f-a967-6edbd734d075">
+<img src="https://github.com/Aaron-k12/customer-satisfaction-project/assets/107159092/ae0b8cd9-cf41-4b93-8ac8-e62491a121a4">
+
 <caption>MLFlowUI dashboard</caption>
 <br><br>
 
