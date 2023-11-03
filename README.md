@@ -82,9 +82,7 @@ The objective is to predict the customer satisfaction score for the next order g
       streamlit run streamlit_app.py
     </code>
   </pre>
-https://github.com/Aaron-k12/customer-satisfaction-project/assets/107159092/de6a90d6-6e7c-4f98-ae18-7b38f99642da
-
-
+https://github.com/Aaron-k12/customer-satisfaction-project/assets/107159092/053ee89e-56c1-4f03-90e5-f54e395ccc30
 
 
 
