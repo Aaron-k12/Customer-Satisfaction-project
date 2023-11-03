@@ -85,9 +85,5 @@ The objective is to predict the customer satisfaction score for the next order g
 <p>You can view a demo <a href="https://github.com/Aaron-k12/customer-satisfaction-project/assets/107159092/e6aafeef-9277-4b4d-be02-0177873281c3" target="_blank" >here</a></p>
 
 
-<p> You can view the demo <a href="https://github.com/Aaron-k12/customer-satisfaction-project/assets/107159092/053ee89e-56c1-4f03-90e5-f54e395ccc30">here></a></p>
-
-
-
 
 
