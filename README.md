@@ -1,7 +1,7 @@
 # customer-satisfaction-project
 
 <h1>Introduction</h1>
-<p>This work addresses a real-world scenario where predicting the satisfaction score of a customer before an order or purchase is made based on their previous behaviour. It uses features such as price, payment value, freight value and many others to make prediction. The relevance of this project is to help businesses not only maintain a competitive advantage but to enhance product service and quality. The work showcases the power of <a href="https://zenml.io/">Zenml</a> to build and deploy production-ready machine learning pipelines easily. Again, MLflow is used for deployment and tracking because it was done locally.</p> 
+<p>This work addresses a real-world scenario where predicting the satisfaction score of a customer before an order or purchase is made based on their previous behaviour. It uses features such as price, payment value, freight value and many others to make prediction. The relevance of this project is to help businesses not only maintain a competitive advantage but to enhance product service and quality. The work showcases the power of <a href="https://zenml.io/">Zenml</a> to build and deploy production-ready machine learning pipelines easily. Again, MLflow is used for deployment and tracking on a local machine.</p> 
 <h2>Problem Statement</h2>
 <p>For a given customer's historical data, predict the review score for the next order or purchase.</p>
 <h2>Dataset</h2>
@@ -51,13 +51,13 @@ The objective is to predict the customer satisfaction score for the next order g
 <h2>Training pipeline</h2>
 <p>Steps include:</p>
 <ul>
-<li> ingest_data: ingest the data and create a DataFrame.</li>
+<li>ingest_data: ingest the data and create a DataFrame.</li>
 <li>clean_data: clean the data, remove the unwanted columns, divides data into train and test.</li>
 <li>train_model: train the model and save the model using MLflow autologging.</li>
 <li>evaluation: evaluates the model and save the metrics into artifact store.</li>
 </ul>
 <h2>Deployment Pipeline</h2>
-<p>The deployment_pipeline.py pipeline extends the training pipeline and creates a continuous deployment workflow. It takes in and processes input data, trains a model, and then (re)deploys the prediction server that serves the model if it meets a paticular criteria.  The pipeline's first four steps are the same as above, including:
+<p>The deployment_pipeline.py pipeline extends the training pipeline and creates a continuous deployment workflow. It takes in and processes input data, trains a model, and then re-deploys the prediction server that serves the model if it meets a paticular criteria.  The pipeline's first four steps are the same as above, including:
 </p>
 <ul>
   <li>deployment_trigger: To check whether the newly trained model meets the criteria set for deployment.</li>
@@ -82,7 +82,11 @@ The objective is to predict the customer satisfaction score for the next order g
       streamlit run streamlit_app.py
     </code>
   </pre>
-https://github.com/Aaron-k12/customer-satisfaction-project/assets/107159092/053ee89e-56c1-4f03-90e5-f54e395ccc30
+<p>You can view a demo <a href="https://github.com/Aaron-k12/customer-satisfaction-project/assets/107159092/e6aafeef-9277-4b4d-be02-0177873281c3" target="_blank" >here</a></p>
+
+
+<p> You can view the demo <a href="https://github.com/Aaron-k12/customer-satisfaction-project/assets/107159092/053ee89e-56c1-4f03-90e5-f54e395ccc30">here></a></p>
+
 
 
 
